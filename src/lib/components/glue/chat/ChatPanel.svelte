@@ -168,7 +168,7 @@
 	<!-- bottom panel: message input -->
 	<form
 		on:submit={handleCreateChat}
-		class="z-2 absolute left-0 right-0 bottom-0 h-20 bg-base-100 p-4"
+		class="z-2 absolute left-0 right-0 bottom-0 flex h-20 items-center space-x-2 bg-base-100 p-4"
 	>
 		<TextInput
 			bind:value={content}
@@ -176,6 +176,7 @@
 			placeholder="Type a message"
 			autofocus={innerWidth >= 768 || undefined}
 		/>
+		<button class="btn-primary btn-md btn rounded-full">Send</button>
 	</form>
 </div>
 
