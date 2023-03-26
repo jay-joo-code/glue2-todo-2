@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
 	import IconBack from '$lib/icons/glue/IconBack.svelte';
 
@@ -14,7 +15,7 @@
 	};
 
 	let canBack = false;
-	$: canBack = history?.length > 1;
+	$: canBack = browser && history?.length > 1;
 </script>
 
 <button class={`${$$props.class} btn gap-2`} on:click={handleClick}
