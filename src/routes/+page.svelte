@@ -5,6 +5,6 @@
 </script>
 
 <PageContainer title="Home" layout="aside-main">
-	<Main>main</Main>
+	<Main>oi</Main>
 	<Aside>aside</Aside>
 </PageContainer>
